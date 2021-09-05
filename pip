@@ -7,3 +7,14 @@ $HOME/.pip/pip.conf
 timeout = 60
 index-url = http://pypi.douban.com/simple
 trusted-host = pypi.douban.com
+
+
+最近在创建新的 Python Virtualenv 时出现了 Missing dependencies for SOCKS support 的错误，经检查后发现为 Python 本身在没有安装 pysocks 时并不支持 socks5 代理，而环境变量中则设置了 socks5 的代理。
+
+解决方法：
+
+$ unset all_proxy && unset ALL_PROXY # 取消所有 socks 代理
+$ pip install pysocks
+参考：
+
+https://stackoverflow.com/questions/38794015/pythons-requests-missing-dependencies-for-socks-support-when-using-socks5-fro
