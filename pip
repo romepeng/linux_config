@@ -1,0 +1,9 @@
+
+$HOME/.pip/pip.conf
+
+** 注意： **如果使用http链接，需要指定trusted-host参数
+
+[global]
+timeout = 60
+index-url = http://pypi.douban.com/simple
+trusted-host = pypi.douban.com
