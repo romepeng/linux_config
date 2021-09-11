@@ -1,0 +1,9 @@
+copy vim config to other user:
+
+sudo cp ~/.vim /root/
+sudo cp ~/.vimrc /root/
+
+sudo vim
+
+
+
