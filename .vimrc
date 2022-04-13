@@ -26,7 +26,7 @@ Plug 'vim-airline/vim-airline'
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
+#Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
@@ -45,7 +45,8 @@ let g:python_support_python3_requirements = add(get(g:,'python_support_python3_r
 let g:python_support_python3_requirements = add(get(g:,'python_support_python3_requirements',[]),'setproctitle')
 call plug#end()
 
-let g:python3_host_prog='/root/anaconda3/bin/python'
+let g:python3_host_prog='/usr/bin/python3'
+
 let g:pymode_python = 'python3'
 let g:python_support_python2_require = 0
 let g:python_support_python3_requirements = add(get(g:,'python_support_python3_requirements',[]),'flake8')
