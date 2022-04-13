@@ -26,7 +26,6 @@ Plug 'vim-airline/vim-airline'
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-#Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
